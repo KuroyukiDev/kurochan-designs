@@ -1,1 +1,8 @@
-/* Add styles here */
+body {
+    background-color: #2F4F4F !important;
+    color: white;
+}
+
+.card {
+    background-color: #3E5F5F !important;
+}
