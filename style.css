@@ -6,3 +6,7 @@ body {
 .card {
     background-color: #3E5F5F !important;
 }
+
+.top-gap {
+    margin-top: 75px !important;
+}
