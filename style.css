@@ -1,12 +1,8 @@
 body {
-    background-color: #2F4F4F !important;
+    background-color: #2F4F4F;
     color: white;
 }
 
-.card {
-    background-color: #3E5F5F !important;
-}
-
-.top-gap {
-    margin-top: 95px !important;
+.hidden-card {
+    display: none;
 }

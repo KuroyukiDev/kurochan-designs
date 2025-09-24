@@ -3,35 +3,41 @@
 
 ## Overview
 
-This project is a static website designed to run on GitHub Pages. It uses modern HTML, CSS, and JavaScript, with Bootstrap 5 for styling and components. The site is a portfolio for a graphic designer.
+This is a graphic design portfolio website for a potential employer. It is built using Bootstrap 5 and features a clean, modern, dark-themed layout. The site's purpose is to showcase design work in two specific categories: "Water Bottles" and "T-Shirts".
 
 ## Project Structure & Design
 
-*   **`index.html`**: The main entry point of the application. It includes a navigation bar, a hero section, a portfolio grid, and a footer.
-*   **`style.css`**: Contains custom styles for the application, including a forced dark mode theme.
-*   **`main.js`**: For custom JavaScript functionality. It is loaded as an ES Module (`<script type="module">`), allowing for modern JavaScript features and code organization.
-*   **Bootstrap 5**: The Bootstrap 5 CSS and JS (with Popper.js) libraries are included via CDN with SRI hashes for security.
+*   **`index.html`**: The main entry point of the application. It contains the entire user experience, including the category navigation and the portfolio display.
+*   **`style.css`**: Contains custom styles, including the dark theme and specific layout adjustments.
+*   **`main.js`**: For any future custom JavaScript functionality.
+*   **`downloads/`**: A directory containing the design files (`.ai`, `.png`, `.gif`) that will be linked from the portfolio cards for employers to download.
 
-### Color Scheme and Theming
+### Design & Layout
 
-*   **Dark Mode**: The website uses a forced dark mode.
-*   **Background**: The main background color is dark slate grey (`#2F4F4F`).
-*   **Text**: Body text is white for readability.
-*   **Interactable Elements**: Buttons and links use the Bootstrap `info` theme color.
-*   **Buttons**: All buttons across the site should use the `rounded-4` class to match the corner rounding of the card components.
+*   **Framework**: Bootstrap 5.
+*   **Theme**: A custom dark mode theme is applied.
+*   **Home Page / Category Section**: At the top of the page, a grid will display two Bootstrap cards representing the main design categories: "Water Bottles" and "T-Shirts". These cards will act as navigation, linking to the corresponding tabs in the portfolio section below.
+*   **Hidden Card**: A third, wider card is present in the HTML structure but will be hidden using CSS (`display: none;`). This card is reserved for future use.
+*   **Portfolio Section**: This section uses the Bootstrap 5 Tab component to separate the portfolio into the two categories.
+    *   **Tabs**: "Water Bottles" and "T-Shirts".
+    *   **Tab Panes**: Each tab's content area will feature a responsive, horizontal grid of Bootstrap cards.
+    *   **Portfolio Cards**: Each card within the tab panes will contain:
+        *   A preview image of the design.
+        *   The design's title.
+        *   A "Downloads" section with links to the corresponding `.ai` and image (`.png` or `.gif`) files located in the `/downloads/` directory.
 
-## Implemented Features
+## Current Plan: Implementing the Portfolio
 
-*   Created a boilerplate Bootstrap 5 homepage for a Graphic Design portfolio.
-*   Implemented a forced dark mode color scheme.
-*   Updated `index.html` with a navbar, hero section, portfolio grid, and footer.
-*   Updated `style.css` to apply the dark theme and custom styles.
-*   Updated the button rounding to `rounded-4`.
-
-## Current Plan
-
-*   **Fix Asset Loading Issue:** Reconfigure the project from a Single Page Application (SPA) to a standard multi-page static site.
-*   **Enable ES Modules:** Modified the `index.html` to load `main.js` using `<script type="module">`.
-*   **Fix JavaScript Execution Timing:** Wrapped the code in `main.js` within a `DOMContentLoaded` event listener. This ensures the script runs only after the full HTML document is loaded, preventing errors from trying to access DOM elements that haven't been rendered yet.
-*   **Fix Placeholder Images:** Replaced the placeholder image service from `via.placeholder.com` to `placehold.co` to resolve loading issues.
-*   **Configure Development Server:** Updated the `.idx/dev.nix` file to use a more robust Node.js-based `http-server` instead of the default Python server. This ensures that JavaScript modules are served with the correct MIME type, which was preventing the browser from executing the script.
+1.  **Update Blueprint:** The `blueprint.md` file has been updated to reflect the new, specific requirements.
+2.  **Clean Up HTML:** Remove all previous boilerplate and Web Component-related code from `index.html`.
+3.  **Implement Home Page Card Layout:**
+    *   Create the Bootstrap grid for the two category cards ("Water Bottles", "T-Shirts").
+    *   Create the third, double-wide card and add a class to hide it.
+4.  **Implement CSS for Hidden Card:** Add `display: none;` to the custom class for the hidden card in `style.css`.
+5.  **Build Portfolio Tab Section:**
+    *   Create the Bootstrap Tab navigation structure.
+    *   Create the tab panes for each category.
+6.  **Create Placeholder Downloadable Files:**
+    *   Create the `/downloads` directory.
+    *   Add placeholder `.ai` and `.png` files for a few example designs.
+7.  **Populate Tab Panes:** Add the portfolio item cards to each tab pane, including placeholder images and links to the downloadable files.
