@@ -1,4 +1,3 @@
-
 # Application Blueprint
 
 ## Overview
@@ -16,6 +15,7 @@ This is a graphic design portfolio website for a potential employer. It is built
 
 *   **Framework**: Bootstrap 5.
 *   **Theme**: A custom dark mode theme is applied.
+*   **Navbar**: A responsive, dark-themed navbar with links to "Home," "Water Bottles," and "T-Shirts."
 *   **Home Page / Category Section**: At the top of the page, a grid will display two Bootstrap cards representing the main design categories: "Water Bottles" and "T-Shirts". These cards will act as navigation, linking to the corresponding tabs in the portfolio section below.
 *   **Hidden Card**: A third, wider card is present in the HTML structure but will be hidden using CSS (`display: none;`). This card is reserved for future use.
 *   **Portfolio Section**: This section uses the Bootstrap 5 Tab component to separate the portfolio into the two categories.
@@ -25,19 +25,5 @@ This is a graphic design portfolio website for a potential employer. It is built
         *   A preview image of the design.
         *   The design's title.
         *   A "Downloads" section with links to the corresponding `.ai` and image (`.png` or `.gif`) files located in the `/downloads/` directory.
+*   **Footer**: A footer with copyright information and social media links.
 
-## Current Plan: Implementing the Portfolio
-
-1.  **Update Blueprint:** The `blueprint.md` file has been updated to reflect the new, specific requirements.
-2.  **Clean Up HTML:** Remove all previous boilerplate and Web Component-related code from `index.html`.
-3.  **Implement Home Page Card Layout:**
-    *   Create the Bootstrap grid for the two category cards ("Water Bottles", "T-Shirts").
-    *   Create the third, double-wide card and add a class to hide it.
-4.  **Implement CSS for Hidden Card:** Add `display: none;` to the custom class for the hidden card in `style.css`.
-5.  **Build Portfolio Tab Section:**
-    *   Create the Bootstrap Tab navigation structure.
-    *   Create the tab panes for each category.
-6.  **Create Placeholder Downloadable Files:**
-    *   Create the `/downloads` directory.
-    *   Add placeholder `.ai` and `.png` files for a few example designs.
-7.  **Populate Tab Panes:** Add the portfolio item cards to each tab pane, including placeholder images and links to the downloadable files.
