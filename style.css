@@ -8,5 +8,5 @@
 /* } */
 
 .no-pointer-event {
-    pointer-events: none;
+    pointer-events: none !important;
 }
