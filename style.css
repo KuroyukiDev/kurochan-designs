@@ -7,6 +7,10 @@
     /* display: none; */
 /* } */
 
-span.no-pointer-event > *, span.no-pointer-event br, i.no-pointer-event {
-    pointer-events: auto !important;
+.btn.kuro-btn i, 
+.btn.kuro-btn br, 
+.btn.kuro-btn span, 
+.btn.kuro-btn span br {
+    pointer-events: none !important;
+    cursor: pointer !important;
 }
