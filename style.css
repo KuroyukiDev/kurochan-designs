@@ -7,6 +7,6 @@
     /* display: none; */
 /* } */
 
-.no-pointer-event {
-    pointer-events: none !important;
+span.no-pointer-event > *, span.no-pointer-event br, i.no-pointer-event {
+    pointer-events: auto !important;
 }
