@@ -13,4 +13,9 @@
 .btn.kuro-btn span br {
     pointer-events: none !important;
     cursor: pointer !important;
+    touch-action: none !important;
+}
+
+.btn.kuro-btn {
+    cursor: pointer !important;
 }
