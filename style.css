@@ -1,8 +1,12 @@
-body {
-    background-color: #2F4F4F;
-    color: white;
-}
+/* body { */
+    /* background-color: #2F4F4F; */
+    /* color: white; */
+/* } */
 
-.hidden-card {
-    display: none;
+/* .hidden-card { */
+    /* display: none; */
+/* } */
+
+.no-pointer-event {
+    pointer-events: none;
 }
