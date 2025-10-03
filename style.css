@@ -7,15 +7,31 @@
     /* display: none; */
 /* } */
 
-.btn.kuro-btn i, 
+/* .btn.kuro-btn i, 
 .btn.kuro-btn br, 
 .btn.kuro-btn span, 
 .btn.kuro-btn span br {
-    pointer-events: none !important;
+    pointer-events: auto !important;
     cursor: pointer !important;
-    touch-action: none !important;
+    touch-action: auto !important;
+} */
+
+.kuro-btn {
+    cursor: pointer !important;
+    position: relative;
 }
 
-.btn.kuro-btn {
-    cursor: pointer !important;
-}
+.kuro-btn::after {
+    /* Required for the pseudo-element to exist. */
+    content: '';
+  
+    /* Stretches the overlay to cover the entire button. */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    /* For debugging: uncomment the line below to see the clickable area. */
+    background-color: rgba(0, 255, 85, 0.384);
+  }
